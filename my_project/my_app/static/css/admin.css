@@ -1,0 +1,19 @@
+.icon-hover:hover {
+    color: red;
+}
+.button {
+    padding: 5px 10px;
+    color: white;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 3px;
+    text-decoration: none;
+}
+
+.edit-button {
+    background-color: #28a745; /* Yaşıl */
+}
+
+.delete-button {
+    background-color: #dc3545; /* Qırmızı */
+}

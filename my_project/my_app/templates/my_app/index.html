@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY PROJECT</title>
+    <link rel="icon" type="image/x-icon" href="{% static 'icons/fav_icon.png' %}">
+    <link rel="stylesheet" href="../../static/my_app/style.css">
+</head>
+<body>
+    <h1>MY BLOG</h1>
+    
+    <div class="card-container">
+        {% for post in posts %}
+        <a href="post/{{ post.id }}">
+        <div class="card">
+            <div class="property-image">
+                <img src="{{ post.get_thumbnail_image_url }}" alt="{{ post.title }}" class="post-image">
+            </div>            
+            <div class="card-content">
+                <h3 class="title">{{ post.title }}</h3>
+                <p class="description">{{ post.description }}</p>
+                <p class="created_at">Y{{ post.created_at }}</p>
+                <a href="#" class="read-more">Read more</a>
+            </div>
+        </div>
+        </a>
+        {% endfor %}
+    </div>
+</body>
+</html>

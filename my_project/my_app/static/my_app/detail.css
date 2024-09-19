@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f0fff0; /* Daha da açıq yaşıl rəng */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 2.5em;
+    color: #333;
+    font-weight: bold;
+}
+
+.card-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 20px;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 320px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #007bff;
+}
+
+.card-content {
+    padding: 20px;
+    text-align: center;
+}
+
+.title {
+    font-size: 1.8em;
+    margin-bottom: 15px;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.category {
+    font-size: 1em;
+    color: #28a745;
+    margin-bottom: 10px;
+}
+
+.description {
+    font-size: 1em;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.created_at, .updated_at {
+    font-size: 0.9em;
+    color: #999;
+}
+
+.read-more {
+    display: inline-block;
+    padding: 12px 18px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: background-color 0.3s;
+    font-size: 1.1em;
+}
+
+.read-more:hover {
+    background-color: #0056b3;
+    text-decoration: underline;
+}
+
+/* Cədvəl üçün əlavə CSS */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+}
+
+td, th {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
